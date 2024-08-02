@@ -8,7 +8,9 @@ on:
         default: blank service
 jobs:
   do-a-thing:
+    runs-on: ubuntu-latest
     env:
       SERVICE: ${{ inputs.service-name }}
-    run:
-      echo $SERVICE
+    steps:
+      - run:
+          echo $SERVICE
