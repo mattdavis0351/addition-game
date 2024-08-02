@@ -1,0 +1,14 @@
+name: calling workflow
+on:
+  workflow_dispatch:
+    inputs:
+      service-name:
+        type: string
+        required: true
+        default: blank service
+jobs:
+  do-a-thing:
+    env:
+      SERVICE: ${{ inputs.service-name }}
+    run:
+      echo $SERVICE

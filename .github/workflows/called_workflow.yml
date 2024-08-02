@@ -1,0 +1,10 @@
+name: called workflow
+on:
+  workflow_run:
+    workflows: [calling workflow]
+    types:
+      - completed
+jobs:
+  do-a-thing:
+    run:
+      echo "I did a thing"
