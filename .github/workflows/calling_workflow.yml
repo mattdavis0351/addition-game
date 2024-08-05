@@ -1,4 +1,4 @@
-name: calling workflow
+name: bread
 on:
   workflow_dispatch:
     inputs:
