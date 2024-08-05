@@ -1,7 +1,7 @@
 name: called workflow
 on:
   workflow_run:
-    workflows: [calling workflow]
+    workflows: [bread]
     types:
       - completed
 jobs:
